@@ -1,0 +1,58 @@
+* {
+	all: unset;
+	display: revert;
+}
+
+:root {
+  --constant-color-blue:  #3877ee;
+	--constant-color-green:  #6ABF4B;
+	--constant-color-text:  #fff;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background: #000;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.city {
+	height: 100vh;
+	background-image: linear-gradient(rgba(2, 15, 32, 0.4), rgba(2, 15, 32, 0.4)), url("../images/city-min.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	position: relative;
+}
+
+.blue {
+	background: var(--constant-color-blue);
+}
+.green {
+	background: var(--constant-color-green);
+}
+
+.button {
+	position: absolute;
+	display: flex;
+	border-radius: 50%;
+	opacity: 0.7;
+}
+.button img {
+	border-radius: inherit;
+}
+
+.open {
+	align-items: center;
+	border-radius: 40px;
+	opacity: 1;
+}
+
+.button-text {
+	display: none;
+}
+.button-text--active {
+	padding: 11px 15px;
+	display: block;
+	color: var(--constant-color-text);
+}
